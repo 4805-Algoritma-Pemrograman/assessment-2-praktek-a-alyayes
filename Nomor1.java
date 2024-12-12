@@ -1,15 +1,24 @@
 import java.util.Scanner;
+import javax.sound.sampled.SourceDataLine;
 
 public class Nomor1 {
 
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
+
+        System.out.println("Masukkan nilai N: ");
         int N = input.nextInt();
-        /* Pekerjaan anda mulai dari sini */
 
-        /* Pekerjaan anda berakhir sini */
+        tampilkanAngkaGanjil (N);
 
-        System.out.println(Nomor1.class.getDeclaredMethods().length); 
     }
+
+    public static void tampilkanAngkaGanjil (int N) {
+        System.out.println("Tampilkan angka ganjil dari 0 hingga" + N + ": ");
+        for (int i = 1; i <= N; i += 2) {
+        System.out.println(i + " ");
+    }
+    System.out.println();
     
+    }
 }
